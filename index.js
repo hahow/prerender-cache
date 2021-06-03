@@ -43,7 +43,7 @@ function cache(url) {
         PASSWORD: process.env.PRERENDER_PASSWORD,
         CACHE_URL: url,
       },
-      spec: './cypress/integration/clean-cache.js',
+      spec: './cypress/integration/cache.js',
     })
     .then(() => {
       console.log('done')
